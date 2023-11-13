@@ -8,6 +8,6 @@ spec:
   cloud-config:
   cleanupAfterMinutes: 60
   registrationRef:
-    name: seedimageregistrationendpoint
+    name: elemental-registration
     namespace: fleet-default
   retriggerBuild: false
