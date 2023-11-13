@@ -4,7 +4,7 @@ metadata:
   name: template-seed-image
   namespace: fleet-default
 spec:
-  baseImage: registry.suse.com/rancher/elemental-teal-iso/5.4:1.2.3
+  baseImage: registry.opensuse.org/isv/rancher/elemental/stable/teal53/15.4/rancher/elemental-teal-iso/5.3:1.1.5
   cloud-config:
   cleanupAfterMinutes: 60
   registrationRef:
