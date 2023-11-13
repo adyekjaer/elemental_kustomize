@@ -18,7 +18,3 @@ spec:
       registration:
         auth: tpm
         emulate-tpm: true
-      reset:
-        reboot: true
-        reset-oem: true
-        reset-persistent: true
