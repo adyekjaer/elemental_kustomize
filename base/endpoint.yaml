@@ -1,24 +1,19 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: your-registration-endpoint
+  name: magicmagic
   namespace: fleet-default
 spec:
   config:
     cloud-config:
       users:
       - name: root
-        passwd: linux
+        passwd: root
     elemental:
       install:
         debug: true
         device: /dev/sda
         poweroff: true
-        reboot: true
       registration:
         auth: tpm
         emulate-tpm: true
-      reset:
-        reboot: true
-        reset-oem: true
-        reset-persistent: true
