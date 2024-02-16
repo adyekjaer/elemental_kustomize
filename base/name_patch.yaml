@@ -1,4 +1,4 @@
 
 - op: replace
   path: /metadata/name
-  value: seedimage-v1
+  value: your-seedImage-name

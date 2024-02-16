@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: elemental-registration
+  name: your-registration-endpoint
   namespace: fleet-default
 spec:
   config:
@@ -18,3 +18,7 @@ spec:
       registration:
         auth: tpm
         emulate-tpm: true
+      reset:
+        reboot: true
+        reset-oem: true
+        reset-persistent: true
