@@ -103,6 +103,12 @@ spec:
                   [ -e"/dev/longhorn-vg/longhorn-lv" ] || exit 1
                   # Format logical volumes with a known label for later use in fstab 
                   mkfs.xfs -L longhorn /dev/longhorn-vg/longhorn-lv
+                  # Install docker
+                  rpm --import https://download.opensuse.org/repositories/Virtualization:/containers/5.5/repodata/repomd.xml.key
+                  zypper addrepo https://download.opensuse.org/repositories/Virtualization:containers/5.5/Virtualization:containers.repo
+                  zypper install -y docker-compose
+
+
     users:
       - name: root
         passwd: linux
