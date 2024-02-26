@@ -6,7 +6,10 @@ metadata:
 spec:
   cloud-config:
     write_files:
-    - content: |
+      path: /etc/testcloudconfig
+      permission: 0777
+      content: 
+      - |
         # My new /etc/testcloudconfig file
         # You should be able to see me :-)
-      path: /etc/testcloudconfig
+      
