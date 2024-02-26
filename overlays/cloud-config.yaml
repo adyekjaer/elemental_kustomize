@@ -10,6 +10,6 @@ spec:
       permission: 0777
       content: 
       - |
-        # My new /etc/testcloudconfig file
-        # You should be able to see me :-)
+        My new /etc/testcloudconfig file
+        You should be able to see me :-)
       
